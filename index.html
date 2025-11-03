@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROWD - Login</title>
+  <title>ROWD - Admin</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="login-container">
-    <h1>Welcome to ROWD</h1>
-    <input type="text" id="userCode" placeholder="Enter your code">
-    <button onclick="login()">Login</button>
-    <p id="error" class="error"></p>
+  <div class="admin-container">
+    <h1>ROWD Admin Panel</h1>
+
+    <div class="section">
+      <h2>Add Employee</h2>
+      <input type="text" id="empName" placeholder="Employee Name">
+      <input type="email" id="empEmail" placeholder="Employee Email">
+      <button onclick="addEmployee()">Add Employee</button>
+    </div>
+
+    <div class="section">
+      <h2>Employees List</h2>
+      <div id="employeeList"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>
